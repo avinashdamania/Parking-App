@@ -48,7 +48,8 @@ def distance(trigPin,echoPin):
  
     return distance
 if __name__ == '__main__':
-    link = MySQLdb.connect(host ="172.20.10.3", port = 8889, passwd = "testpass", user = "testuser", db =  "ParkingSpaces") #Secure connection to mySQL Database
+    ServerIP = #IPAddress of the Server
+    link = MySQLdb.connect(host =ServerIP, port = 8889, passwd = "testpass", user = "testuser", db =  "ParkingSpaces") #Secure connection to mySQL Database
     m=link.cursor() #Create a cursor object to send commands
     try:
         while True:
